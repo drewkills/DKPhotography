@@ -22,7 +22,7 @@ img {
 /* Style for the header specifies the top margin, background color, rounded corners, and center aligns content */
 header {
 	margin-top: 0.2em;
-	background-color: #FFFFFF;
+	background-color: #000000;
 	border-radius: 0.5em;
 	text-align: center;
 }
@@ -51,7 +51,7 @@ nav li {
 	padding: 0.4em;
 }
 
-/* Style changes navigation link text color to white and removes the underline */
+/* Style changes navigation link text color to black and removes the underline */
 nav li a{
 	color: #000000;
 	text-decoration: none;
@@ -71,20 +71,20 @@ nav li a{
 main {
 	display: block;
 	font-family: Verdana, Arial, sans-serif;
-	font-size: 1em;
+	font-size: 1.5em;
 	margin-top: 0.5em;
 	padding: 1em;
 	border-radius: 1em;
-	background-color: #FFFFFF;
-	border-top: solid 0.2em #009933;
-	border-bottom: solid 0.2em #009933;
+	background-color: #FF0000;
+	border-top: solid 0.2em #000000;
+	border-bottom: solid 0.2em #000000;
 }
 
 /* Style for footer specifies font size, text alignment, and top margin */
 footer {
-	font-size: .70em;
+	font-size: .90em;
 	text-align: center;
-	margin-top: 2em;
+	margin-top: 1.5em;
 }
 
 /* Style hides the tablet class */
@@ -186,20 +186,20 @@ nav li{
 /* Style for navigation links specifies display and padding */
 nav li a{
 	display: inline-block;
-	padding: 0.7em;
+	padding: 0.8em;
 }
 
 /* Style rules for pseudo-classes */
 nav li a:link{
-	color: #FFFFFF;
+	color: #000000;
 }
 
 nav li a:visited{
-	color: #FFFF99;
+	color: #745E5E;
 }
 
 nav li a:hover{
-	color: #FFFF00;
+	color: #520000;
 	font-style: italic;
 }
 
