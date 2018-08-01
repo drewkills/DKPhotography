@@ -2,7 +2,7 @@
 
 /* Style for body specifies a background color */
 body {
-	background-color: #FF0000;
+	background-color: #474747;
 }
 
 /* Style to create a fluid image */
@@ -72,10 +72,11 @@ main {
 	display: block;
 	font-family: Verdana, Arial, sans-serif;
 	font-size: 1.5em;
+	color:#FFFFFF;
 	margin-top: 0.5em;
 	padding: 1em;
 	border-radius: 1em;
-	background-color: #FF0000;
+	background-color: #474747;
 	border-top: solid 0.2em #000000;
 	border-bottom: solid 0.2em #000000;
 }
