@@ -1,1 +1,1 @@
-# School Website
+# Photography Webpage
