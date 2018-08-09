@@ -44,7 +44,7 @@ nav ul{
 
 /* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins, and padding for list items within the navigation */
 nav li {
-	background-color: #FF0000;
+	background-color: #BF0000;
 	border-radius: 2em;
 	list-style-type: none;
 	margin: 0.3em;
@@ -105,7 +105,7 @@ footer {
 	/* Style specifies a horizontal display for navigation links */
 	nav li{
 		display: inline;
-		float: left;
+		float: center;
 		margin-left: 1%;
 		margin-right: 1%;
 		padding-left: 0%;
@@ -225,10 +225,10 @@ main p{
 
 /* Style specifies a gradient for the body element */
 body{
-	background: -moz-linear-gradient(#000000, #FF0000); /* Firefox */
-	background: -o-linear-gradient(#000000, #FF0000); /* Opera */
-	background: -webkit-linear-gradient(#000000, #FF0000); /* Chrome, Safari */
-	background: linear-gradient(#000000, #FF0000);
+	background: -moz-linear-gradient(#000000, #BF0000); /* Firefox */
+	background: -o-linear-gradient(#000000, #BF0000); /* Opera */
+	background: -webkit-linear-gradient(#000000, #BF0000); /* Chrome, Safari */
+	background: linear-gradient(#000000, #BF0000);
 	background-attachment: fixed;
 }
 
@@ -239,4 +239,24 @@ ul.gallery{
 	list-style-type: none;
 	padding: 0.2em
 	
+}
+
+/* unvisited link */
+a:link {
+    color: #FB393C;
+}
+
+/* visited link */
+a:visited {
+    color: #FB4DB0;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF5627;
+}
+
+/* selected link */
+a:active {
+    color: #4A4A4A;
 }
