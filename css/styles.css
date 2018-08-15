@@ -83,7 +83,7 @@ main {
 
 /* Style for footer specifies font size, text alignment, and top margin */
 footer {
-	font-size: .90em;
+	font-size: 1em;
 	text-align: center;
 	margin-top: 1.5em;
 }
