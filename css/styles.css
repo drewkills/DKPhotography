@@ -22,7 +22,7 @@ img {
 /* Style for the header specifies the top margin, background color, rounded corners, and center aligns content */
 header {
 	margin-top: 0.2em;
-	background-color: #000000;
+	background-color: none;
 	border-radius: 0.5em;
 	text-align: center;
 }
@@ -48,7 +48,7 @@ nav li {
 	border-radius: 2em;
 	list-style-type: none;
 	margin: 0.3em;
-	padding: 0.4em;
+	padding: 0.6em;
 }
 
 /* Style changes navigation link text color to black and removes the underline */
