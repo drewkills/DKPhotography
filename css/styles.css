@@ -192,7 +192,7 @@ nav li a{
 
 /* Style rules for pseudo-classes */
 nav li a:link{
-	color: #000000;
+	color: #005200;
 }
 
 nav li a:visited{
@@ -238,7 +238,7 @@ ul.gallery{
 	columns: 2;
 	list-style-type: none;
 	padding: 0.3em
-	
+
 }
 
 /* unvisited link */
