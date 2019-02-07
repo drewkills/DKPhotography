@@ -1,0 +1,283 @@
+/* Style sheet created by: Andrew Oldring, 07/12/2018 */
+
+/* Style for body specifies a background color */
+body {
+	background-color: #474747;
+}
+
+/* Style to create a fluid image */
+img {
+	max-width: 100%;
+}
+
+/* Styles for Mobile Layout */
+
+/* Style for container centers the page and sets the element width */
+#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style for the header specifies the top margin, background color, rounded corners, and center aligns content */
+header {
+	margin-top: 0.2em;
+	background-color: none;
+	border-radius: 0.5em;
+	text-align: center;
+}
+
+/* Style for the nav specifies text properties */
+nav {
+	font-family: Georgia, "Times New Roman", self;
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Style specifies padding and margins for unordered list */
+nav ul{
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+/* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins, and padding for list items within the navigation */
+nav li {
+	background-color: #BF0000;
+	border-radius: 2em;
+	list-style-type: none;
+	margin: 0.3em;
+	padding: 0.6em;
+}
+
+/* Style changes navigation link text color to black and removes the underline */
+nav li a{
+	color: #000000;
+	text-decoration: none;
+}
+
+/* Style displays the mobile class */
+.mobile {
+	display: inline;
+}
+
+/* Style hides the desktop class */
+.desktop {
+	display: none;
+}
+
+/* Style for the main element specifies a block display, text properties, margins, padding, rounded corners, and border properties */
+main {
+	display: block;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1.5em;
+	color:#FFFFFF;
+	margin-top: 0.5em;
+	padding: 1em;
+	border-radius: 1em;
+	background-color: #474747;
+	border-top: solid 0.2em #000000;
+	border-bottom: solid 0.2em #000000;
+}
+
+/* Style for footer specifies font size, text alignment, and top margin */
+footer {
+	font-size: 1em;
+	text-align: center;
+	margin-top: 1.5em;
+}
+
+/* Style hides the tablet class */
+.tablet{
+	display: none;
+}
+
+/* Style rule specifies to not display the equip class */
+.equip {
+	display: none;
+}
+
+/* Media query for tablet viewport targets screen size with a minimum width of 660px. */
+
+@media only screen and (min-width: 660px) {
+
+	/* Style specifies a horizontal display for navigation links */
+	nav li{
+		display: inline;
+		float: center;
+		margin-left: 1%;
+		margin-right: 1%;
+		padding-left: 0%;
+		padding-right: 0%;
+		width: 18%;
+		white-space: nowrap;
+}
+
+/* Style specifies clear and top margin properties for the main element */
+main{
+	clear: left;
+	margin-top: 4em;
+}
+
+/* Style specifies to hide the mobile class */
+.mobile{
+	display: none;
+}
+
+/* Style specifies to display desktop class */
+.desktop{
+	display: inline;
+}
+
+/* Style specifies a display, float, and padding for the equip class */
+.equip{
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+/* Style specifies a display, list-style-position, and bottom margin for the items class */
+.items{
+	display: block;
+	list-style-position: inside;
+	margin-bottom: 5em;
+}
+
+/* Style specifies to display the tablet class */
+.tablet{
+	display: block;
+}
+
+/* Style specifies a font weight and top margin for description list terms */
+dt{
+	font-weight: bold;
+	margin-top: 0.7em;
+}
+
+}
+
+/* Media query for desktop viewport targets screens with a minimum width of 830px. */
+
+@media only screen and (min-width: 830px) {
+
+	/* Style specifies a width for container */
+	#container{
+		width: 80%;
+}
+
+/* Style specifies margin and padding for the unordered list within the nav */
+nav ul{
+	margin: 0;
+	padding-left: .50%;
+	padding-right: .50%;
+}
+
+/* Style for navigation list items specifies a border radius, border, margin, width, and padding */
+nav li{
+	border-radius: 0;
+	border-top: solid #000000;
+	border-bottom: solid #000000;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+	width: 20%;
+}
+
+/* Style for navigation links specifies display and padding */
+nav li a{
+	display: inline-block;
+	padding: 0.8em;
+}
+
+/* Style rules for pseudo-classes */
+nav li a:link{
+	color: #005200;
+}
+
+nav li a:visited{
+	color: #745E5E;
+}
+
+nav li a:hover{
+	color: #520000;
+	font-style: italic;
+}
+
+/* Style specifies border, shadow, margin, and padding for main element */
+main{
+	border-style: none;
+	box-shadow: 0.5em 0.5em 0.5em #404040;
+	margin-bottom: 1em;
+	margin-top: 1em
+}
+
+/* Style specifies left and right padding for paragraph elements within the main element */
+main p{
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+/* Style specifies a bottom margin for the items class */
+.items{
+	margin-bottom: 6em;
+}
+
+/* Style specifies a gradient for the body element */
+body{
+	background: -moz-linear-gradient(#000000, #BF0000); /* Firefox */
+	background: -o-linear-gradient(#000000, #BF0000); /* Opera */
+	background: -webkit-linear-gradient(#000000, #BF0000); /* Chrome, Safari */
+	background: linear-gradient(#000000, #BF0000);
+	background-attachment: fixed;
+}
+
+}
+
+ul.gallery{
+	columns: 2;
+	list-style-type: none;
+	padding: 0.3em
+
+}
+
+/* unvisited link */
+a:link {
+    color: #FB393C;
+}
+
+/* visited link */
+a:visited {
+    color: #FB4DB0;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF5627;
+}
+
+/* selected link */
+a:active {
+    color: #4A4A4A;
+}
+
+/* Back to top button */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
