@@ -21,10 +21,10 @@ img {
 
 /* Style for the header specifies the top margin, background color, rounded corners, and center aligns content */
 header {
-	margin-top: 0.2em;
-	background-color: none;
-	border-radius: 0.5em;
-	text-align: center;
+    margin-top: 0.2em;
+    background-color: transparent; /* Set background color to transparent */
+    border-radius: 0.5em;
+    text-align: center;
 }
 
 /* Style for the nav specifies text properties */
