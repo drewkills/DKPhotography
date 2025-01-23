@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <title>Drew Kills Photography</title>
 </head>
 
@@ -27,23 +27,25 @@
 
         <main>
             <ul class="gallery">
-                <!-- Include image details directly in the alt attribute -->
-                <li><img src="images/Axe.jpg" alt="Axe (1080x1350)" onclick="window.open('images/Axe.jpg', '_blank');" /></li>
+                <li>
+                    <figure>
+                        <img src="images/Axe.jpg" alt="Photograph of an axe with dimensions 1080x1350" onclick="window.open('images/Axe.jpg', '_blank');">
+                        <figcaption>Axe</figcaption>
+                    </figure>
+                </li>
                 <!-- Repeat the pattern for other images -->
             </ul>
             <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         </main>
 
-        <!-- Use the footer area to add web page footer content -->
         <footer>
-            Copyright (c) 2020 Andrew Oldring<br>
-            <a href="mailto:oldring.andrew@Outlook.com">oldring.andrew@Outlook.com</a>
+            <p>Copyright (c) 2025 Andrew Oldring</p>
+            <a href="mailto:oldring.andrew@outlook.com">oldring.andrew@outlook.com</a>
             <a href="https://github.com/drewkills/DKPhotography">Powered by GitHub, Inc.</a>
         </footer>
 
     </div>
 
-    <!-- Moved script tags to the end of the body for better performance -->
     <script src="scripts/javascript.js"></script>
     <script src="scripts/countdown.js"></script>
 
