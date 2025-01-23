@@ -34,18 +34,36 @@
         </nav>
 
         <main>
-            <h2>Ready to get started? Contact me today.</h2>
-            <p>I'm located in the Puget Sound.</p>
-            <p>Phone Number: 
-                <a href="tel:+12534089728">(253) 408-9728</a>
-            </p>
-            <p>Email Address: <a href="mailto:oldring.andrew@outlook.com">oldring.andrew@outlook.com</a></p>
-            <p>Social Media:
-                <a href="https://x.com/drewkills666?ref_src=twsrc%5Etfw" class="x-follow-button" data-show-count="false">Follow @drewkills666</a>
-                <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
-            </p>
-            <br><br>
-        </main>
+    <h2>Ready to get started? Contact me today.</h2>
+    <p>I'm located in the Puget Sound.</p>
+    <p>Phone Number: 
+        <a href="tel:+12534089728">(253) 408-9728</a>
+    </p>
+    <p>Email Address: <a href="mailto:oldring.andrew@outlook.com">oldring.andrew@outlook.com</a></p>
+    <p>Social Media:
+        <a href="https://x.com/drewkills666?ref_src=twsrc%5Etfw" class="x-follow-button" data-show-count="false">Follow @drewkills666</a>
+        <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+    </p>
+
+    <!-- Contact Form -->
+    <form id="contact-form" action="send-email.php" method="POST">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+    </form>
+
+    <br><br>
+</main>
 
         <footer>
             <p>Copyright (c) 2025 Andrew Oldring</p>
