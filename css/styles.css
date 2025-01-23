@@ -1,9 +1,24 @@
 /* General Styles */
 
+:root {
+    --primary-color: #BF0000;
+    --secondary-color: #000000;
+    --text-color: #FFFFFF;
+    --link-color: #FB393C;
+    --link-visited: #FB4DB0;
+    --link-hover: #FF5627;
+    --link-active: #4A4A4A;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #474747;
+    background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color)) fixed;
     margin: 0;
     font-family: Verdana, Arial, sans-serif;
+    line-height: 1.6;
 }
 
 img {
@@ -41,7 +56,7 @@ nav ul {
 }
 
 nav li {
-    background-color: #BF0000;
+    background-color: var(--primary-color);
     border-radius: 2em;
     list-style-type: none;
     margin: 0.3em;
@@ -49,7 +64,7 @@ nav li {
 }
 
 nav li a {
-    color: #000000;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
@@ -58,12 +73,17 @@ nav li a {
 main {
     display: block;
     font-size: 1.5em;
-    color: #FFFFFF;
+    color: var(--text-color);
     margin-top: 0.5em;
     padding: 1em;
     border-radius: 1em;
     background-color: #474747;
-    border: 0.2em solid #000000;
+    border: 0.2em solid var(--secondary-color);
+}
+
+main p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 /* Footer Styles */
@@ -78,8 +98,7 @@ footer {
 
 @media only screen and (min-width: 660px) {
     nav li {
-        display: inline;
-        float: center;
+        display: inline-block;
         margin: 0 1%;
         padding: 0.6em 0;
         width: 18%;
@@ -133,7 +152,7 @@ footer {
 
     nav li {
         border-radius: 0;
-        border: solid #000000;
+        border: solid var(--secondary-color);
         margin: 0;
         padding: 0;
         width: 20%;
@@ -163,26 +182,17 @@ footer {
         margin-top: 1em;
     }
 
-    main p {
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-    }
-
     .items {
         margin-bottom: 6em;
     }
-
-    body {
-        background: -moz-linear-gradient(#000000, #BF0000);
-        background: -o-linear-gradient(#000000, #BF0000);
-        background: -webkit-linear-gradient(#000000, #BF0000);
-        background: linear-gradient(#000000, #BF0000);
-        background-attachment: fixed;
-    }
 }
 
+/* Gallery Styles */
+
 ul.gallery {
-    columns: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
     list-style-type: none;
     padding: 0.3em;
 }
@@ -190,19 +200,19 @@ ul.gallery {
 /* Link Styles */
 
 a:link {
-    color: #FB393C;
+    color: var(--link-color);
 }
 
 a:visited {
-    color: #FB4DB0;
+    color: var(--link-visited);
 }
 
 a:hover {
-    color: #FF5627;
+    color: var(--link-hover);
 }
 
 a:active {
-    color: #4A4A4A;
+    color: var(--link-active);
 }
 
 /* Back to Top Button Styles */
@@ -215,12 +225,13 @@ a:active {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: red;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
     font-size: 18px;
+    transition: background-color 0.3s ease;
 }
 
 #myBtn:hover {
